@@ -1,0 +1,164 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #dedede;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  h1 {
+    letter-spacing: 1px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  h2 {
+    letter-spacing: 1px;
+    margin: 0;
+    text-align: center;
+  }
+  .balance
+  {
+    font-size: 25px;
+  }
+  
+  /*css for IncomeExpense component */
+  h4 {
+    margin: 5px;
+    text-align: center;
+  }
+  
+  .incomeBox {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .incomeBox  div {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .money {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 5px 0;
+  }
+  
+  .plus {
+    color: #b6960a;
+    font-weight: bold;
+  }
+  
+  .minus {
+    color: #2da3ad;
+    font-weight: bold;
+    
+  }
+
+  /* css for TransactionList */
+
+  h3 {
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin: 40px 0 10px;
+    text-align: center;
+  }
+  .btn-del {
+    cursor: pointer;
+    background-color: #ec9e93;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  /* css for newTransaction component */
+  .btn {
+    cursor: pointer;
+    background-color: lightsteelblue;
+    color: #fff;
+    border: 0;
+    font-size: 20px;
+    margin: 10px 0 30px;
+    padding: 10px;
+    width: 100%;
+    font-weight: bold;
+  }
+  label {
+    display: inline-block;
+    margin: 5px 0;
+    font-weight: bold;
+  }
+  
+  input[type='text'],
+  input[type='number'] {
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+ 
+  
+  .btn:focus,
+  .btn-del:focus {
+    outline: 50px;
+  }
+  
+  .list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  
+  .list li {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .list li.plus {
+    border-right: 5px solid #b6960a;
+  }
+  
+  .list li.plus:hover {
+    border-right: 5px solid #b6960a;
+    background-color: #b6960a;
+    color: #f7f7f7
+  }
+  
+  .list li.minus {
+    border-left: 5px solid #2da3ad;
+  }
+  
+  .list li.minus:hover {
+    border-right: 5px solid #2da3ad;
+    background-color: #2da3ad;
+    color: #f7f7f7
+  }
+  
+  
+  .list li:hover .btn-del {
+    opacity: 1;
+  }
